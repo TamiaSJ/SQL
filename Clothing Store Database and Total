@@ -1,0 +1,15 @@
+--Create a Clothing Store database
+CREATE TABLE Tamias_Clothing_Line (quantity integer primary key, name text, price integer);
+
+INSERT INTO Tamias_Clothing_Line VALUES
+(10, "Crop Tops", 5.00),
+(5, "Jeans", 6.75),
+(20, "Dresses", 7.00),
+(15, "Shoes", 2.50),
+(25, "Shirts", 10.25);
+
+--Display the database ordered by price. 
+SELECT * FROM Tamias_Clothing_Line ORDER BY price;
+
+--What is the Total amount of items in the store?
+SELECT SUM(quantity) FROM Tamias_Clothing_Line;
